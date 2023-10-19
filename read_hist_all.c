@@ -15,10 +15,10 @@ char *read_hist_all(info_t *info)
 		return (NULL);
 	}
 
-	historyPath = malloc(sizeof(char) * (_strlen(homeDir) + _strlen(HISTORY_FILE) + 2));
-	if (!historyPath) {
+	historyPath = malloc(sizeof(char) *
+			(_strlen(homeDir) + _strlen(HISTORY_FILE) + 2));
+	if (!historyPath)
 		return (NULL);
-	}
 
 	historyPath[0] = 0;
 	custom_cpy_str(historyPath, homeDir);

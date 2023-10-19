@@ -8,11 +8,11 @@
  */
 int _putstr_fd(char *str, int fd)
 {
-    int i = 0;
+	int i = 0;
 
-    if (!str)
-        return (0);
-    while (*str)
-        i += _putchar_fd(*str++, fd);
-    return (i);
+	if (!str)
+		return (0);
+	while (*str)
+		i += _putchar_fd(*str++, fd);
+	return (i);
 }

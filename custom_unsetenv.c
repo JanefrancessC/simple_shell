@@ -7,16 +7,16 @@
  */
 int custom_unsetenv(info_t *info)
 {
-    int i;
+	int i;
 
-    if (info->argc == 1)
-    {
-        _putstr("Few arguments entered.\n");
-        return (1);
-    }
-    for (i = 1; i <= info->argc; i++)
-        {
-            remove_env(info, info->argv[i]);
-        }
-    return (0);
+	if (info->argc == 1)
+	{
+		_putstr("Few arguments entered.\n");
+		return (1);
+	}
+	for (i = 1; i <= info->argc; i++)
+	{
+		remove_env(info, info->argv[i]);
+	}
+	return (0);
 }

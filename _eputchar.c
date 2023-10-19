@@ -7,15 +7,15 @@
  */
 int _put_char(char c)
 {
-    static int i;
-    static char _buffer[BUFFER_SIZE_SET];
+	static int i;
+	static char _buffer[BUFFER_SIZE_SET];
 
-    if (c == BUFFER_FLUSH || i >= BUFFER_SIZE_SET)
-    {
-        write(2, _buffer, i);
-        i = 0;
-    }
-    if (c != BUFFER_FLUSH)
-        _buffer[i++] = c;
-    return (1);
+	if (c == BUFFER_FLUSH || i >= BUFFER_SIZE_SET)
+	{
+		write(2, _buffer, i);
+		i = 0;
+	}
+	if (c != BUFFER_FLUSH)
+		_buffer[i++] = c;
+	return (1);
 }

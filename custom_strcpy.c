@@ -10,7 +10,7 @@
 char *custom_strncpy(char *dest, char *src, int n)
 {
 	int i;
-    int j;
+	int j;
 	char *result = dest;
 
 	i = 0;
@@ -29,21 +29,20 @@ char *custom_strncpy(char *dest, char *src, int n)
  * custom_cpy_str - Copy source string to destination.
  * @dest: The destination string.
  * @src: The source string.
- * This function copies the characters from src to dest.
  * Return: A pointer to the destination string.
  */
 
 char *custom_cpy_str(char *dest, char *src)
 {
-    int i = 0;
+	int i = 0;
 
-    if (dest == src || src == NULL)
-        return dest;
-    while (src[i])
-    {
-        dest[i] = src[i];
-        i++;
-    }
-    dest[i] = '\0';
-    return (dest);
+	if (dest == src || src == NULL)
+		return (dest);
+	while (src[i])
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
