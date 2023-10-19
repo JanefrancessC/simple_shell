@@ -10,17 +10,17 @@
  */
 char *custom_getenv(info_t *info, const char *name)
 {
-    list_t *node = info->env;
-    char *value;
+	list_t *node = info->env;
+	char *value;
 
-    while (node)
-    {
-        value = char_finder(node->str, name);
-        if (value && *value)
-            {
-                return value;
-            }
-        node = node->next;
-    }
-    return (NULL);
+	while (node)
+	{
+		value = char_finder(node->str, name);
+		if (value && *value)
+		{
+			return (value);
+		}
+		node = node->next;
+	}
+	return (NULL);
 }

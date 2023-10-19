@@ -29,7 +29,8 @@ int _custom_change_directory(info_t *info)
 			return (1);
 		}
 		custom_put_str(custom_getenv(info, "OLDPWD=")), _putchar('\n');
-		cd_return = chdir((new_dir = custom_getenv(info, "OLDPWD=")) ? new_dir : "/");
+		cd_return = chdir((new_dir = custom_getenv(info, "OLDPWD=")) ?
+				new_dir : "/");
 	}
 	else
 		cd_return = chdir(info->argv[1]);

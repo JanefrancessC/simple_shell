@@ -11,7 +11,7 @@
 char *custom_strcat(char *dest, char *src, int n)
 {
 	int i = 0;
-    int j = 0;
+	int j = 0;
 	char *result = dest;
 
 	while (dest[i] != '\0')
@@ -43,7 +43,7 @@ char *_strcat(char *dest, char *src)
 	{
 		dest++;
 	}
-	
+
 	while (*src)
 	{
 		*dest++ = *src++;
