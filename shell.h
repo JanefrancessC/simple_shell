@@ -180,7 +180,8 @@ size_t print_list(const list_t *_head);
 list_t *starts_with_node(list_t *, char *, char);
 ssize_t get_node_index(list_t *, list_t *);
 int isCommandChainDelimiter(info_t *info, char *buf, size_t *p);
-void checkCommandChain(info_t *info, char *buf, size_t *p, size_t i, size_t len);
+void checkCommandChain(info_t *info,
+		char *buf, size_t *p, size_t i, size_t len);
 int replaceAliases(info_t *info);
 int variables_replace(info_t *info);
 int switch_string(char **str1, char *str2);
